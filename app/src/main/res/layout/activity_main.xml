@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1">
+
+<in.unicodelabs.kdgaugeview.KdGaugeView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/speedMeter"
+       android:layout_gravity="center"
+       app:animationTime="2000"
+       app:maxSpeed="180"
+       app:minSpeed="0"
+       app:speed="80"
+       app:speed_limit="100"/>
+   </FrameLayout>
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1">
+
+      <in.unicodelabs.kdgaugeview.KdGaugeView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:id="@+id/speedMeter1"
+          android:layout_gravity="center"
+          app:animationTime="2000"
+          app:maxSpeed="180"
+          app:minSpeed="0"
+          app:speed="10"
+          app:speed_limit="30"/>
+   </FrameLayout>
+
+   <Button
+       android:id="@+id/but"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="1dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginTop="20dp"
+       android:layout_gravity="bottom"
+       android:text="START THE METER"/>
+
+</LinearLayout>
